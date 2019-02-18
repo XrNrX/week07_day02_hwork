@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Homework</title>
+    <script src="./js/bundle.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="container">
+  <div id="app">
+    <h1>Word Counter</h1>
+    <textarea v-model="words" rows="8" cols="80">Enter Some Text</textarea>
+
+    <button id="flashy-btn" v-on:click="countAllWords">Count Words!!!</button>
+
+  <p>The total words are: {{ totalWords }}</p>
+
+  </div>
+  </div>
+  </body>
+</html>
